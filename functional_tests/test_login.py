@@ -38,8 +38,8 @@ class LoginTest(FunctionalTest):
         self.wait_to_be_logged_out(email=TEST_EMAIL)
 
         # The "Logged out" status also persists after a refresh
-        self.browser.refresh()
-        self.wait_to_be_logged_out(email=TEST_EMAIL)
+        #self.browser.refresh()
+        #self.wait_to_be_logged_out(email=TEST_EMAIL)
 
     def switch_to_new_window(self, text_in_title):
         retries = 60
